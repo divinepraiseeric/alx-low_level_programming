@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - using sizeof and printing the value for various types
+* main - using sizeof and printing the valuefor various types
 *
 * Return: Always 0. (No errors returned)
 */
