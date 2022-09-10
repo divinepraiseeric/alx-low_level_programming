@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
-* main -
+* main - print
+*Return: 
 */
 int main(void)
 {
@@ -20,6 +21,7 @@ if (i != 98)
 {
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
