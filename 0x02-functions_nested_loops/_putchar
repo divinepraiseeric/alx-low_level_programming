@@ -1,0 +1,9 @@
+#include <unistd.h>
+
+/**
+* _putchar - will write the character c to the standard output
+* @c: this is the character that will be printed
+*
+*Return: the return statement will be 1 if succesful and -1 if there is an error, errno is likewise set as it should be.
+*/
+int _putchar(char c)
