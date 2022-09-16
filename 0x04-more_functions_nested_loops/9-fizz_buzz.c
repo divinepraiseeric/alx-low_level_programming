@@ -30,7 +30,7 @@ printf("FizzBuzz ");
 }
 else if (num == 100)
 {
-printf("100\n");
+printf("Buzz \n");
 }
 else if (num > 100)
 {
