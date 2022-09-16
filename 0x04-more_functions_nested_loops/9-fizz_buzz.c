@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -16,7 +15,11 @@ int num;
 for (num = 1; num <= 100; num++)
 {
 
-if (num % 3 == 0 && (num % 5 != 0))
+if (num == 100)
+{
+printf("Buzz \n");
+}
+else if (num % 3 == 0 && (num % 5 != 0))
 {
 printf("Fizz ");
 }
@@ -27,10 +30,6 @@ printf("Buzz ");
 else if (num % 3 == 0 && num % 5 == 0)
 {
 printf("FizzBuzz ");
-}
-else if (num == 100)
-{
-printf("Buzz \n");
 }
 else if (num > 100)
 {
