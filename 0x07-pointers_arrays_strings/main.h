@@ -7,8 +7,17 @@
 * int prototypes()
 */
 int _putchar(char);
+
 char *_memset(char *s, char b, unsigned int n);
+
+char *s;
+
+char b;
+
+unsigned int n;
+
 int i;
+
 char f;
 
 char *_memcpy(char *dest, char *src, unsignedint n);

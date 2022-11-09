@@ -7,12 +7,31 @@
 * n not sure why I need n yet
 */
 
+
+/*
+* int main()
+* {
+*/
 char *_memset(char *s, char b, unsigned int n)
 {
-for(i==0; i<n; i++)
+unsigned int i;
+for(i=0; i<n; i++)
 {
-*(s + i) = b;
-// printf("%x and %c" (s + i), *(s + i));
+*s = b;
+/*
+* printf("%x and %d", &s, *s);
+*/
+s = s + i;
+char *s = s;         
 }
 return (s);
 }
+
+/*
+* char f = 1;
+* char *s;
+* s = &f;
+* _memset(s, 0, 20*sizeof(char));
+* return (0);
+* }
+*/
