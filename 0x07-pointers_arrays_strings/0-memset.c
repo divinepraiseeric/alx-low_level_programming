@@ -1,36 +1,19 @@
 #include "main.h"
-/* #include <stdio.h>
-* this function fills a memory block with a constat byte of char type
-* s is a pointer referencing the memory to be filled with b
-* b is a char and will be the constant byte that fills memory
-* n not sure why I need n yet
-*/
-
-
-/*
-* int main()
-* {
-*/
+/**
+ *_memset - fill a block of memory with a specific value
+ *@s: starting address of memory to be filled
+ *@b: the desired value
+ *@n: number of bytes to be changed
+ *
+ *Return: changed array with new value for n bytes
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int i;
-for(i=0; i<n; i++)
+int i = 0;
+for (; n > 0; i++)
 {
-*s = b;
-/*
-* printf("%x and %d", &s, *s);
-*/
-s = s + i;
-char *s = s;         
+s[i] = b;
+n--;
 }
-_putchar (s);
+return (s);
 }
-
-/*
-* char f = 1;
-* char *s;
-* s = &f;
-* _memset(s, 0, 20*sizeof(char));
-* return (0);
-* }
-*/
