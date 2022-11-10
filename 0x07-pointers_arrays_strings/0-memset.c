@@ -14,6 +14,5 @@ while (i < n+1)
 *(s + i) = b;
 i++;
 }
-*&s = return s;
 return s;
 }
