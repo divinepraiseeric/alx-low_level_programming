@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _memcpy - Copies n bytes from one memo add to another
-* @src: --- to copy from while 
+* @src: --- to copy from while
 * @dest: --- to copy to
 * @n: is the iterating range of memory area to be copied from
 * Return: a pointer to dest
