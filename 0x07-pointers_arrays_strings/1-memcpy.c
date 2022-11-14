@@ -4,10 +4,13 @@
 * unsigned int n is the iterating range of memory area to be copied from
 */
 #include "main.h"
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 while (n-- > 0)
+{
 *(dest+n) = *(src+n);
+}
 return dest;
 }
 
