@@ -15,6 +15,6 @@ while (n-- > 0)
 *(s+i) = b;
 ++i;
 }
-return extrapointer;
+return s;
 }
 
