@@ -12,7 +12,10 @@ char *_strchr(char *s, char c)
 		if (*s == c)
 			return (s);
 		else
-			return (NULL);
+		{
+			char *nullptr = 0;
+			return (nullptr);
+		}
 	}
 	return (s);
 }
