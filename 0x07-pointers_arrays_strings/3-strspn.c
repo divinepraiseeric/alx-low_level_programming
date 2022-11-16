@@ -16,5 +16,6 @@ unsigned int _strspn(char *s, char *accept)
 		else
 			return (i);
 	}
+	return (i);
 }
 
