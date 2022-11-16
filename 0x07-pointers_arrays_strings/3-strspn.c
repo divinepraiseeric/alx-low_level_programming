@@ -7,10 +7,16 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	while (*accept++)
+	unsigned int i = 0;
+
+	while (*s++)
 	{
-		*s++ = *accept++;
-		return ("%u", s++ - s);
+		while (*accept++)
+		{
+			if (*s == *accept)
+				++i;
+		}
 	}
+	return ("%u", i);
 }
 
