@@ -9,7 +9,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 
-	while (*s++ != " ")
+	while (*s++ != 32)
 	{
 		while (*accept++)
 		{
