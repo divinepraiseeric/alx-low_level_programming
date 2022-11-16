@@ -9,13 +9,21 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 
-	while (*s++ != 32)
+	while (*s++)
 	{
-		while (*accept++)
+		if (i != --i)
 		{
-			if (*s == *accept)
-				++i;
+			while (*accept++)
+			{
+				if (*s == *accept)
+				{
+					++i;
+					break;
+				}
+			}
 		}
+		else
+			break;
 	}
 	return (i);
 }
