@@ -8,13 +8,17 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
+	int custom_switch = 1;
 
 	while (*s++)
 	{
-		if (*s == *accept++)
-			++i;
-		else
-			return (i);
+		while (custom_switch != 0)
+		{
+			if (*s == *accept++)
+				++i;
+			else
+				custom_switch = 0;
+		}
 	}
 	return (i);
 }
