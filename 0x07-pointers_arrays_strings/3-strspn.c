@@ -12,7 +12,10 @@ unsigned int _strspn(char *s, char *accept)
 	while (*s++)
 	{
 		if (*(_strchr(accept, *s)) != '\0')
+		{
 			i = ++i;
+			final_i = i;
+		}
 		else
 			final_i = i;
 	}
