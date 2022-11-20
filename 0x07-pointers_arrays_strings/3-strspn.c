@@ -15,7 +15,6 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			i = i + 1;
 			accept = &accept[0];
-			s = s + 1;
 		}
 	}
 	return (i);
