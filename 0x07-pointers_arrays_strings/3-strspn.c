@@ -9,9 +9,9 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 
-	while (*accept++)
+	for (*accept; *accept != \0; *accept++)
 	{
-		if (*s == *accept)
+		for (*s; *s == *accept; *s++)
 		{
 			i = i + 1;
 			accept = &accept[0];
