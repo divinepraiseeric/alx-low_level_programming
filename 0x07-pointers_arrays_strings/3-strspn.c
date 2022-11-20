@@ -9,18 +9,14 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 
-	for (*s; *s = *accept; *s++)
+	while (*accept++)
 	{
-		for (*accept; *accept != *s; *accept++)
+		if (*s == *accept)
 		{
-			if (*s == *accept)
-			{
-				i = i++;
-				*accept = accept[0];
-				return (i);
-			}
+			i = ++i;
+			accept = &accept[0];
 		}
 	}
-	return (0);
+	return (i);
 }
 
