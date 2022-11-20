@@ -13,8 +13,9 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		if (*s == *accept)
 		{
-			i = i+1;
+			i = i + 1;
 			accept = &accept[0];
+			s = s + 1;
 		}
 	}
 	return (i);
