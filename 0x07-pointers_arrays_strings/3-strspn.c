@@ -9,13 +9,15 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
 
-	for (accept = &accept[0]; *accept != 0; accept++)
+	while (*accept != 0)
 	{
-		for (s = &s[0]; *s == *accept; s++)
+		while (*s != *accept)
 		{
-			i = i + 1;
-			accept = &accept[0];
+			if (*accept != 0)
+				accept = accept + 1;
 		}
+		i = i + 1;
+		s = s + 1;
 	}
 	return (i);
 }
