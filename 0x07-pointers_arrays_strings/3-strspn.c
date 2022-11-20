@@ -8,16 +8,13 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i = 0;
+	char *test;
 
-	while (*accept !=  NULL)
+	for (*s = s[0]; test != 0; s++)
 	{
-		if (*s == *accept)
-		{
-			s = s + 1;
-			i += 1;
-			accept = &accept[0];
-		}
+		test = _strchr(accept, *s);
+		i += 1;
 	}
-	return (i);
+	return (i - 1);
 }
 
