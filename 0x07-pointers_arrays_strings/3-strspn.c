@@ -9,7 +9,7 @@ unsigned int chkfrx(char *pool, char x)
 {
 	unsigned int result, p = 0;
 
-	for (; pool[p] > 0; p++)
+	for (result = 0; pool[p] > 0; p++)
 	{
 		if (x == pool[p])
 			result += 1;
