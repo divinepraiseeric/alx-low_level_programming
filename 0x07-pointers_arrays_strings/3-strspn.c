@@ -17,7 +17,6 @@ unsigned int _strspn(char *s, char *accept)
 			x = 0;
 			y += 1;
 		}
-		x += 1;
 	}
 	return (answer);
 }
