@@ -9,7 +9,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int answer, x, y = 0;
 
-	for (x = 0; accept[x]; x++)
+	for (x = 0; accept[x] != 0; x++)
 	{
 		if (s[y] == accept[x])
 		{
