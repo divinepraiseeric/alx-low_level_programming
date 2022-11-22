@@ -17,6 +17,8 @@ unsigned int _strspn(char *s, char *accept)
 			x = 0;
 			y += 1;
 		}
+		else if (accept[x] == 0)
+			break;
 		else
 			x += 1;
 	}
