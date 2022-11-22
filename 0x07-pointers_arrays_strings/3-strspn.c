@@ -7,17 +7,19 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, answer = 0;
-	unsigned int test;
+	unsigned int answer, x, y = 0;
 
-	do {
-		test = chkfrx(accept, s[i]);
-		if (test > 0)
+	for (x = 0; accept[x]; x++)
+	{
+		if (s[y] == accept[x])
 		{
 			answer += 1;
-			i += 1;
+			x = 0;
+			y += 1;
 		}
-	} while (test > 0);
+		else
+			x += 1;
+	}
 	return (answer);
 }
 
