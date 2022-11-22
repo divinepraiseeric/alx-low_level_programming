@@ -19,6 +19,6 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		x += 1;
 	}
-	return (answer);
+	return ((answer % 2) * 5);
 }
 
