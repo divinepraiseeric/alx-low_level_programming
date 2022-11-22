@@ -9,7 +9,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int answer, x, y = 0;
 
-	while (accept[x] != 0)
+	while (accept[x])
 	{
 		while (s[y] == accept[x])
 		{
