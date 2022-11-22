@@ -10,7 +10,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int answer, x, y = 0;
 	char npt[] = "";
 
-	for ( ; *(accept + x) != *npt; )
+	for ( ; *(accept + x) != *npt; x++)
 	{
 		if (*(accept + x) == *(s + y))
 		{
@@ -23,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 		else if (*(accept + x) != *(s + y))
 		{
 			if (*(accept + x) != *npt)
-				x = x + 1;
+				x = x;
 		}
 		else if (*(accept + x) == *npt)
 			break;
