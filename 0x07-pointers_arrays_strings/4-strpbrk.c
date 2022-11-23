@@ -17,13 +17,10 @@ char *_strpbrk(char *s, char *accept)
 		for (x = 0; accept[x]; x++)
 		{
 			if (accept[x] == s[y])
-			{
-				ptr_ret = accept;
-				return (ptr_ret);
-			}
+				ptr_ret = c;
 		}
 	}
-	if (ptr_ret == accept)
+	if (ptr_ret == s)
 		return (ptr_ret);
 	else
 		return (0);
