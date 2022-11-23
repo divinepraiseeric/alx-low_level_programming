@@ -16,10 +16,11 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if (status == 0)
 		{
-			if ((needle[0] == haystack[y]) && (status == 0))
+			if (needle[0] == haystack[y])
 			{
 				start = y;
 				status = 1;
+				return (needle);
 				while (needle[++x])
 				{
 					if (needle[x] != haystack[start + x])
@@ -30,12 +31,11 @@ char *_strstr(char *haystack, char *needle)
 					}
 				}
 			}
-			else
-				return (0);
 		}
 	}
 	if (status == 1)
 		return (needle);
-	return (needle);
+	else
+		return (needle);
 }
 
