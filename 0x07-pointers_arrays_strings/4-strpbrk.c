@@ -22,9 +22,13 @@ char *_strpbrk(char *s, char *accept)
 				break;
 			}
 		}
+		if (ptr_rt == 1)
+			return (accept);
+		else
+			return (0);
 	}
 	if (ptr_rt == 1)
-		return (accept);
+		return(acept);
 	else
 		return (0);
 }
