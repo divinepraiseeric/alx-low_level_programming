@@ -8,7 +8,6 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *ptr_ret;
 	unsigned int x = 0;
 	unsigned int y = 0;
 
@@ -17,17 +16,10 @@ char *_strpbrk(char *s, char *accept)
 		for (x = 0; accept[x]; x++)
 		{
 			if (accept[x] == s[y])
-			{
-				s[y] = accept;
-				ptr_ret = s;
-			}
+				return (accept);
 			else
 				return (0);
 		}
 	}
-	if (ptr_ret == s)
-		return (ptr_ret);
-	else
-		return (0);
 }
 
