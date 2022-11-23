@@ -30,11 +30,12 @@ char *_strstr(char *haystack, char *needle)
 					}
 				}
 			}
-			return (0);
+			else
+				return (0);
 		}
-		else if (status == 1)
-			return (needle);
 	}
-	return (0);
+	if (status == 1)
+		return (needle);
+	return (needle);
 }
 
