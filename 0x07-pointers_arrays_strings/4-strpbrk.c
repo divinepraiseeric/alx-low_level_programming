@@ -21,8 +21,6 @@ char *_strpbrk(char *s, char *accept)
 				ptr_rt = 1;
 				return (s);
 			}
-			else
-				return (0);
 		}
 	}
 	if (ptr_rt == 1)
