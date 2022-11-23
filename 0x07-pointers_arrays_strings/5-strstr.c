@@ -26,7 +26,6 @@ char *_strstr(char *haystack, char *needle)
 					{
 						y = start + 1;
 						status = 0;
-						return (0);
 					}
 				}
 			}
@@ -37,6 +36,8 @@ char *_strstr(char *haystack, char *needle)
 		haystack[start] = *needle;
 		return (haystack);
 	}
+	else if (needle[0] == 0)
+		return (haystack);
 	else
 		return (0);
 }
