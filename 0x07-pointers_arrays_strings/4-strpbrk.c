@@ -28,7 +28,7 @@ char *_strpbrk(char *s, char *accept)
 			return (0);
 	}
 	if (ptr_rt == 1)
-		return(acept);
+		return(accept);
 	else
 		return (0);
 }
