@@ -10,7 +10,6 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int x = 0;
 	unsigned int y = 0;
-	unsigned int ptr_rt = 0;
 
 	for (y = 0; s[y]; y++)
 	{
