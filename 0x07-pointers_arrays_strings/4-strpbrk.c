@@ -10,17 +10,24 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int x = 0;
 	unsigned int y = 0;
+	unsigned int ptr_rt = 0;
 
 	for (y = 0; s[y]; y++)
 	{
 		for (x = 0; accept[x]; x++)
 		{
 			if (accept[x] == s[y])
+			{
+				ptr_rt = 1;
 				return (accept);
+			}
 			else
 				return (0);
 		}
 	}
-	return (accept);
+	if (ptr_rt == 1)
+		return (accept);
+	else
+		return (0);
 }
 
