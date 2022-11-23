@@ -17,9 +17,19 @@ char *_strpbrk(char *s, char *accept)
 		for (x = 0; accept[x]; x++)
 		{
 			if (accept[x] == s[y])
-				return (s);
+			{
+				ptr_rt = 1;
+				break;
+			}
 		}
+		if (ptr_rt == 1)
+			return (accept);
+		else
+			return (0);
 	}
-	return (0);
+	if (ptr_rt == 1)
+		return (accept);
+	else
+		return (0);
 }
 
