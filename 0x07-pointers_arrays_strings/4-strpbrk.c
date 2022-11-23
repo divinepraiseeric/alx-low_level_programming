@@ -19,7 +19,6 @@ char *_strpbrk(char *s, char *accept)
 			if (accept[x] == s[y])
 			{
 				ptr_rt = 1;
-				return (s);
 				break;
 			}
 		}
