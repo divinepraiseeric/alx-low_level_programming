@@ -19,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 			if (accept[x] == s[y])
 				ptr_ret = s;
 			else
-				return(0);
+				return (0);
 		}
 	}
 	if (ptr_ret == s)
