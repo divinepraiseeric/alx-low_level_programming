@@ -7,7 +7,9 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int answer, x, y = 0;
+	unsigned int answer = 0;
+	unsigned int x = 0;
+	unsigned int y = 0;
 
 	for (y = 0; accept[y]; y++)
 	{
@@ -17,8 +19,6 @@ unsigned int _strspn(char *s, char *accept)
 			x += 1;
 			y = 0;
 		}
-		else if (s[x] != accept[y])
-			y += 0;
 	}
 	return (answer);
 }
