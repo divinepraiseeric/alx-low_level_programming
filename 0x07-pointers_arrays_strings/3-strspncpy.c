@@ -19,8 +19,21 @@ unsigned int _strspn(char *s, char *accept)
 			y = 0;
 		}
 		else if ((s[x] != accept[y]) && (accept[y] != 0))
+		{
 			y += 0;
+		}
 		else if ((s[x] != accept[y]) && (accept[y] == 0))
+		{
+			state = 0;
+		}
+/**
+*		else if ((s[x] == accept[y]) && (accept[y] == 0))
+*		{
+*			answer += 1;
+*			x += 1;
+*		}
+*/
+		else
 			state = 0;
 	}
 	return (answer);
