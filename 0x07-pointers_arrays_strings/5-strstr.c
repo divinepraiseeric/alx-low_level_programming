@@ -20,7 +20,6 @@ char *_strstr(char *haystack, char *needle)
 			{
 				start = y;
 				status = 1;
-				return (needle);
 				while (needle[++x])
 				{
 					if (needle[x] != haystack[start + x])
@@ -34,8 +33,11 @@ char *_strstr(char *haystack, char *needle)
 		}
 	}
 	if (status == 1)
-		return (needle);
+	{
+		haystack[start] = *needle;
+		return (haystack);
+	}
 	else
-		return (needle);
+		return (0);
 }
 
