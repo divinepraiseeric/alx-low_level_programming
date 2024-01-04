@@ -11,6 +11,6 @@ int main(void)
 {
 	char *i = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(STDERR_FILENO, i, sizeof(i) - 1);
+	write(STDERR_FILENO, i, sizeof(i) + 51);
 		return (1);
 }
